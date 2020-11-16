@@ -1,6 +1,6 @@
 # Uniswap Trading!
 
-## Setting up Truffle and Ganache
+## Getting Set Up
 
 1. Clone this Repo
 
@@ -16,6 +16,32 @@
    ```
    npm install -g yarn
    ```
+## Running the trading script
+
+1. Navigate to the `trading_scripts` directory
+
+   ```
+   cd trading_scripts
+   ```
+
+2. Install the dependencies of all packages:
+
+   ```
+   yarn
+   ```
+
+3. Generate the contract types:
+
+   ```
+   yarn generate-contract-types
+   ```
+
+4. Run the trading script
+   ```
+   yarn trade --api_url=YOUR_ALCHEMY_API_URL
+   ``` 
+  
+## Bonus: Smart Contract 
 
 5. Install Truffle
 
@@ -64,28 +90,3 @@ truffle compile
 ```
 truffle migrate
 ```
-
-## Running the trading script
-
-1. Navigate to the `trading_scripts` directory
-
-   ```
-   cd trading_scripts
-   ```
-
-2. Install the dependencies of all packages:
-
-   ```
-   yarn
-   ```
-
-3. Generate the contract types:
-
-   ```
-   yarn generate-contract-types
-   ```
-
-4. Run the trading script
-   ```
-   yarn trade --api_url=YOUR_ALCHEMY_API_URL
-   ```
